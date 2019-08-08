@@ -1,0 +1,33 @@
+        <footer>
+            <p>Created by: {{name}}</p>
+        </footer>
+    </body>
+    <script>
+        /*  Since script loading is dynamic/async, we take
+        a callback function with our loadScript call
+        that executes once the script is done downloading/parsing
+        on the page.
+        */
+        var loadScript =  (src, callbackfn) => {
+            var newScript = document.createElement("script");
+            newScript.type = "text/javascript";
+            newScript.setAttribute("async", "true");
+            newScript.setAttribute("src", src);
+
+            if (newScript.readyState) {
+                newScript.onreadystatechange = function () {
+                    if (/loaded|complete/.test(newScript.readyState)) callbackfn();
+                }
+            } else {
+                newScript.addEventListener("load", callbackfn, false);
+            }
+
+            document.documentElement.firstChild.appendChild(newScript);
+        }
+
+        if (window.location.href=='http://localhost:3000/') {
+                
+                loadScript("/js/app.js");
+        } 
+    </script>
+</html>

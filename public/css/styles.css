@@ -1,0 +1,77 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../../src/sass/styles.scss */
+.row, header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+/* line 17, ../../src/sass/styles.scss */
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 28, ../../src/sass/styles.scss */
+footer {
+  border-top: 1px solid #eeeeee;
+  color: #888888;
+  padding: 16px 0;
+  margin-top: 16px;
+}
+
+/* line 38, ../../src/sass/styles.scss */
+header nav li {
+  display: inline-block;
+}
+/* line 42, ../../src/sass/styles.scss */
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+/* line 49, ../../src/sass/styles.scss */
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+/* line 54, ../../src/sass/styles.scss */
+.portrait {
+  width: 250px;
+}
+
+/* line 57, ../../src/sass/styles.scss */
+.page-content {
+  flex-grow: 1;
+}
+
+/* line 60, ../../src/sass/styles.scss */
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+/* line 67, ../../src/sass/styles.scss */
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}

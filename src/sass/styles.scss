@@ -1,0 +1,73 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// @import "compass/reset";
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center
+}
+
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer{
+    
+    border-top: 1px solid #eeeeee;
+    color: #888888;
+    padding: 16px 0 ;
+    margin-top: 16px;
+}
+header{
+    @extend .row;
+    nav{
+        li{
+            display: inline-block;
+        }
+    }
+    a{
+        color: #888888;
+        margin-right: 16px;
+        text-decoration: none;
+
+    }
+}
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+.portrait{
+    width: 250px;
+}
+.page-content{
+    flex-grow: 1;
+}
+input{
+
+    border:1px solid #cccccc;
+    padding: 8px;
+
+
+}
+button{
+    cursor: pointer;
+    border:1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
